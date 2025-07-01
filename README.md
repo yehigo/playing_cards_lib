@@ -1,39 +1,27 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# playing_cards
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
+The `playing_cards` package for Flutter allows you to easily use playing cards from a standard 52 card deck. 
+This is for programtic handling of cards and for UI , follow the package https://github.com/yehigo/playing_cards untill merged in original package mentioned below. 
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
+This is abstracted NON UI logic from the package : https://github.com/bedardjo/playing_cards 
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Getting Started
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+To import:
 
 ```dart
-const like = 'sample';
+import 'package:playing_cards_lib/playing_cards_lib.dart';
 ```
 
-## Additional information
+And here is a simple usage to render a nine of clubs:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+card = PlayingCard(Suit.clubs, CardValue.nine)
+```
+
+## Jokers
+
+Jokers are modelled as two joker `CardValues` (joker_1, joker_2) in a single joker `Suit`.
+
+You can use the `standardFiftyFourCardDeck()` function in deck.dart to create a deck with two Jokers.
+
