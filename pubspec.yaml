@@ -8,8 +8,6 @@ repository: https://github.com/yehigo/playing_cards_lib
 
 homepage: https://github.com/yehigo/playing_cards_lib
 
-publish_to: https://pub.dev/
-
 
 environment:
   sdk: ^3.7.2
