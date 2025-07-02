@@ -1,7 +1,15 @@
 name: playing_cards_lib
-description: A library for non ui server side cards logic for standard 52 card decks in your Dart or Flutter app. Use this package if you want to handle playing cards without UI rendering, focusing on the logic and data structures.
+
+description: A library for non ui server side cards logic for standard 52 card decks in your Dart or Flutter app.
+
 version: 0.0.1+1
+
 repository: https://github.com/yehigo/playing_cards_lib
+
+homepage: https://github.com/yehigo/playing_cards_lib
+
+publish_to: https://pub.dev/
+
 
 environment:
   sdk: ^3.7.2
